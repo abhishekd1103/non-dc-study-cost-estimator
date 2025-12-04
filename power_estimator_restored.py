@@ -6,7 +6,7 @@ import math
 
 # ============ PAGE CONFIG ============
 st.set_page_config(
-    page_title="Power Systems Cost Estimator v3.5",
+    page_title="Non- DC Power Systems Cost Estimator v3.5",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -326,8 +326,8 @@ st.markdown("""
     <div class="header-left">
         <div class="header-icon">⚡</div>
         <div>
-            <div class="header-title">Power Systems</div>
-            <div class="header-subtitle">Cost Estimator v3.5</div>
+            <div class="header-title">Power Systems Studies Estimations</div>
+            <div class="header-subtitle">Non- DC Cost Estimator v3.5</div>
         </div>
     </div>
     <div class="header-right">
@@ -540,7 +540,7 @@ if len(selected_studies) > 0:
     
     st.dataframe(pd.DataFrame(breakdown_data), use_container_width=True)
     
-    st.info("ℹ️ **Note:** Reporting cost calculated separately. All costs include: Study + Reporting + Modelling / Buses")
+    st.info("ℹ️ **Note:** 1.All estimated data must be cross-checked and validated by a qualified Costing Engineer. | Reporting cost calculated separately. All costs include: Study + Reporting + Modelling / Buses")
     
     # STUDIES BREAKDOWN
     st.markdown('<div class="section-title"><span class="section-icon">📊</span> Studies Breakdown</div>', unsafe_allow_html=True)
@@ -571,7 +571,7 @@ if len(selected_studies) > 0:
     with col3:
         st.metric("With 20% Margin", format_currency(results['cost_per_bus'] * 1.20))
     with col4:
-        st.metric("Total Revenue", format_currency(results['cost_per_bus'] * 1.20 * results['total_buses']))
+        st.metric("Total Cost", format_currency(results['cost_per_bus'] * 1.20 * results['total_buses']))
     
     # EXPORT
     st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
@@ -606,7 +606,7 @@ else:
 # FOOTER
 st.markdown("""
 <div class="footer-premium">
-    <div class="footer-left">© 2024 Developed by A.D | Power Systems Studies Department</div>
+    <div class="footer-left">© 2024 Developed by AD | Roadmap, Logic integration by BD | Version 3.5 | Power System Studies Department</div>
     <div class="footer-center">Built with Streamlit | v3.5 | Power Systems Consulting</div>
     <div class="footer-right">
         <a href="#" class="footer-link">Documentation</a> | <a href="#" class="footer-link">Support</a> | <a href="#" class="footer-link">Terms</a>
