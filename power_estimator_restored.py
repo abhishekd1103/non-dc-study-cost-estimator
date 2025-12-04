@@ -540,7 +540,7 @@ if len(selected_studies) > 0:
     
     st.dataframe(pd.DataFrame(breakdown_data), use_container_width=True)
     
-    st.info("ℹ️ **Note:** 1.All estimated data must be cross-checked and validated by a qualified Costing Engineer. | Reporting cost calculated separately. All costs include: Study + Reporting + Modelling / Buses")
+    st.info("ℹ️ **Note:** 1.All estimated data/pricing must be cross-checked and validated by a qualified Costing Engineer. | Reporting cost calculated separately. All costs include: Study + Reporting + Modelling / Buses")
     
     # STUDIES BREAKDOWN
     st.markdown('<div class="section-title"><span class="section-icon">📊</span> Studies Breakdown</div>', unsafe_allow_html=True)
@@ -561,7 +561,7 @@ if len(selected_studies) > 0:
     st.dataframe(studies_df, use_container_width=True)
     
     # CONTRACTUAL PRICING
-    st.markdown('<div class="section-title"><span class="section-icon">💼</span> Contractual Pricing</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title"><span class="section-icon">💼</span> Contractual Pricing (Can be useful for similar type of project – with similar scope)</div> ', unsafe_allow_html=True)
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -606,8 +606,8 @@ else:
 # FOOTER
 st.markdown("""
 <div class="footer-premium">
-    <div class="footer-left">© 2024 Developed by AD | Roadmap, Logic integration by BD | Version 3.5 | Power System Studies Department</div>
-    <div class="footer-center">ECPL | v3.5 | Efficienergi Consulting Pvt Ltd</div>
+    <div class="footer-left">© 2024 Developed by AD | Roadmap, Logics integration & Documentation by BD | Version 3.5 | Power System Studies Department</div>
+    <div class="footer-center">Non DC PSS Projects cost estimations | v3.5 | Efficienergi Consulting Pvt Ltd</div>
     <div class="footer-right">
         <a href="#" class="footer-link">Documentation</a> | <a href="#" class="footer-link">Support</a> | <a href="#" class="footer-link">Terms</a>
     </div>
