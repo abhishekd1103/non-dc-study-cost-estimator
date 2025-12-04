@@ -607,7 +607,7 @@ else:
 st.markdown("""
 <div class="footer-premium">
     <div class="footer-left">© 2024 Developed by AD | Roadmap, Logic integration by BD | Version 3.5 | Power System Studies Department</div>
-    <div class="footer-center">Built with Streamlit | v3.5 | Power Systems Consulting</div>
+    <div class="footer-center">ECPL | v3.5 | Efficienergi Consulting Pvt Ltd</div>
     <div class="footer-right">
         <a href="#" class="footer-link">Documentation</a> | <a href="#" class="footer-link">Support</a> | <a href="#" class="footer-link">Terms</a>
     </div>
