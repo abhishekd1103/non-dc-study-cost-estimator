@@ -609,7 +609,7 @@ st.markdown("""
     <div class="footer-left">© 2024 Developed by AD | Roadmap, Logics integration & Documentation by BD | Version 3.5 | Power System Studies Department</div>
     <div class="footer-center">Non DC PSS Projects cost estimations | v3.5 | Efficienergi Consulting Pvt Ltd</div>
     <div class="footer-right">
-        <a href="#" class="footer-link">Documentation</a> | <a href="#" class="footer-link">Support</a> | <a href="#" class="footer-link">Terms</a>
+        <a href="#" class="footer-link">Documentation</a> | <a href="#" class="footer-link">Support</a> | <a href="#" class="footer-link">FAQ</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
